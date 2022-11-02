@@ -1,0 +1,13 @@
+<html>
+<head>
+<script>
+    function addimage() {
+        let r = (Math.random() + 1).toString(36).substring(7);
+        document.getElementById("container").innerHTML = `<img src="./test.png?${r}" />`
+    }
+</script>
+</head>
+<body onload="addimage()">
+    <div id="container" />
+</body>
+</html>
